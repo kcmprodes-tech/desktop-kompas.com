@@ -148,7 +148,7 @@ body {
   text-decoration: none;
 }
 
-.kompas-plus img {
+.kompas-plus__icon {
   display: block;
   width: 24px;
   height: 24px;
@@ -274,7 +274,31 @@ body {
   height: 300px;
   margin-top: 24px;
   background: var(--paper-elevation-1);
-  border: 1px solid #e0e0e0;
+}
+
+.content-layout {
+  display: grid;
+  grid-template-columns: 740px 300px;
+  gap: 30px;
+  align-items: start;
+  margin-top: 40px;
+}
+
+.content-layout__left {
+  width: 740px;
+  padding: 30px;
+  overflow: hidden;
+}
+
+.featured-frame {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.content-layout__right {
+  width: 300px;
+  min-height: 300px;
 }
 
 .sr-only {
