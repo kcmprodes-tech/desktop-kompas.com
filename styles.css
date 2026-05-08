@@ -124,7 +124,7 @@ body {
   transform-origin: left center;
 }
 
-.login-button {
+.subscribe-button {
   position: absolute;
   left: 930px;
   top: 16px;
@@ -143,19 +143,77 @@ body {
   text-decoration: none;
 }
 
+.kompas-plus {
+  position: absolute;
+  left: 1174px;
+  top: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: 2px solid #ffb700;
+  border-radius: 7px;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.kompas-plus__text {
+  transform: translateY(-1px);
+}
+
+.kompas-plus__text::first-letter {
+  color: #ffb700;
+}
+
+.account-button {
+  position: absolute;
+  left: 1226px;
+  top: 17px;
+  width: 29px;
+  height: 29px;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+}
+
+.account-button__head {
+  position: absolute;
+  left: 10px;
+  top: 6px;
+  width: 7px;
+  height: 7px;
+  border: 1.5px solid #ffffff;
+  border-radius: 50%;
+}
+
+.account-button__body {
+  position: absolute;
+  left: 7px;
+  top: 16px;
+  width: 13px;
+  height: 6px;
+  border: 1.5px solid #ffffff;
+  border-bottom: 0;
+  border-radius: 7px 7px 0 0;
+}
+
 .site-nav {
   height: 48px;
 }
 
 .site-nav .site-header__frame {
-  display: flex;
-  align-items: center;
-  gap: 31px;
-  padding-left: 185px;
+  position: relative;
 }
 
 .site-nav a {
-  display: inline-flex;
+  position: absolute;
+  top: 0;
+  display: flex;
   align-items: center;
   height: 48px;
   color: #ffffff;
@@ -166,6 +224,66 @@ body {
   letter-spacing: 0;
   text-decoration: none;
   white-space: nowrap;
+}
+
+.nav-news {
+  left: 185px;
+}
+
+.nav-tekno {
+  left: 247px;
+}
+
+.nav-otomotif {
+  left: 314px;
+}
+
+.nav-bola {
+  left: 396px;
+}
+
+.nav-lifestyle {
+  left: 449px;
+}
+
+.nav-tren {
+  left: 530px;
+}
+
+.nav-health {
+  left: 586px;
+}
+
+.nav-food {
+  left: 648px;
+}
+
+.nav-edukasi {
+  left: 718px;
+}
+
+.nav-money {
+  left: 786px;
+}
+
+.nav-umkm {
+  left: 856px;
+}
+
+.nav-female {
+  left: 934px;
+}
+
+.nav-edukasi-2 {
+  left: 997px;
+}
+
+.nav-travel {
+  left: 1137px;
+}
+
+.nav-lainnya {
+  left: 1203px;
 }
 
 .page {
