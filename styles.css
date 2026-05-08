@@ -7,6 +7,7 @@
   --search-placeholder: #c1c1b9;
   --login-bg: #1583cc;
   --line-color: #383838;
+  --text-tracking: -0.2px;
 }
 
 * {
@@ -22,7 +23,8 @@ body {
 body {
   background: var(--page-bg);
   color: #1f1f1f;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  letter-spacing: var(--text-tracking);
 }
 
 .site-header {
@@ -79,9 +81,11 @@ body {
   outline: 0;
   background: var(--search-bg);
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 14px;
+  font-weight: 400;
   line-height: 40px;
+  letter-spacing: var(--text-tracking);
 }
 
 .search input::placeholder {
@@ -103,25 +107,12 @@ body {
 
 .search__icon {
   position: absolute;
-  left: 2px;
-  top: 2px;
-  width: 15px;
-  height: 15px;
-  border: 1.5px solid #c1c1c1;
-  border-radius: 50%;
-}
-
-.search__icon::after {
-  content: "";
-  position: absolute;
-  right: -6px;
-  bottom: -5px;
-  width: 8px;
-  height: 1.5px;
-  border-radius: 999px;
-  background: #c1c1c1;
-  transform: rotate(45deg);
-  transform-origin: left center;
+  inset: 0;
+  fill: none;
+  stroke: #c1c1c1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 16;
 }
 
 .subscribe-button {
@@ -140,66 +131,46 @@ body {
   font-size: 14px;
   font-weight: 700;
   line-height: 1;
+  letter-spacing: var(--text-tracking);
   text-decoration: none;
 }
 
 .kompas-plus {
   position: absolute;
-  left: 1174px;
-  top: 18px;
+  left: 1176px;
+  top: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 28px;
-  height: 28px;
-  border: 2px solid #ffb700;
-  border-radius: 7px;
-  color: #ffffff;
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 15px;
-  font-style: italic;
-  font-weight: 700;
-  line-height: 1;
+  width: 24px;
+  height: 24px;
   text-decoration: none;
 }
 
-.kompas-plus__text {
-  transform: translateY(-1px);
-}
-
-.kompas-plus__text::first-letter {
-  color: #ffb700;
+.kompas-plus img {
+  display: block;
+  width: 24px;
+  height: 24px;
 }
 
 .account-button {
   position: absolute;
   left: 1226px;
-  top: 17px;
-  width: 29px;
-  height: 29px;
-  border: 1.5px solid #ffffff;
-  border-radius: 50%;
+  top: 18px;
+  width: 28px;
+  height: 28px;
+  color: #ffffff;
 }
 
-.account-button__head {
-  position: absolute;
-  left: 10px;
-  top: 6px;
-  width: 7px;
-  height: 7px;
-  border: 1.5px solid #ffffff;
-  border-radius: 50%;
-}
-
-.account-button__body {
-  position: absolute;
-  left: 7px;
-  top: 16px;
-  width: 13px;
-  height: 6px;
-  border: 1.5px solid #ffffff;
-  border-bottom: 0;
-  border-radius: 7px 7px 0 0;
+.account-button svg {
+  display: block;
+  width: 28px;
+  height: 28px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 12;
 }
 
 .site-nav {
@@ -208,20 +179,23 @@ body {
 
 .site-nav .site-header__frame {
   position: relative;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  padding-left: 185px;
 }
 
 .site-nav a {
-  position: absolute;
-  top: 0;
+  position: static;
   display: flex;
   align-items: center;
   height: 48px;
   color: #ffffff;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 1;
-  letter-spacing: 0;
+  letter-spacing: var(--text-tracking);
   text-decoration: none;
   white-space: nowrap;
 }
