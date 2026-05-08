@@ -8,6 +8,7 @@
   --login-bg: #1583cc;
   --line-color: #383838;
   --text-tracking: -0.2px;
+  --paper-elevation-1: #f8f8f8;
 }
 
 * {
@@ -181,8 +182,8 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  gap: 28px;
-  padding-left: 185px;
+  justify-content: space-between;
+  padding: 0 185px;
 }
 
 .site-nav a {
@@ -193,7 +194,7 @@ body {
   color: #ffffff;
   font-family: Inter, Arial, Helvetica, sans-serif;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 1;
   letter-spacing: var(--text-tracking);
   text-decoration: none;
@@ -267,6 +268,13 @@ body {
 .container {
   width: min(var(--container-width), calc(100% - 32px));
   margin: 0 auto;
+}
+
+.ad-slot {
+  height: 300px;
+  margin-top: 24px;
+  background: var(--paper-elevation-1);
+  border: 1px solid #e0e0e0;
 }
 
 .sr-only {
