@@ -887,5 +887,13 @@
         </aside>
       </section>
     </main>
+    <script>
+      document.querySelectorAll(".headline-card, .story-card, .popular-item, .spotlight-card, .original-card, .news-update-card, .column-card, .recommendation-item, .continue-card, .post-short-item, .topic-card").forEach((card) => {
+        card.classList.add("article-card-link");
+        card.addEventListener("click", () => {
+          window.location.href = "article.html";
+        });
+      });
+    </script>
   </body>
 </html>
