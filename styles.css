@@ -721,6 +721,11 @@ body {
   background: var(--paper-elevation-2);
 }
 
+.section-divider--original {
+  margin-top: 40px;
+  margin-bottom: 24px;
+}
+
 .spotlight-section {
   width: 740px;
   padding: 24px 0;
@@ -806,6 +811,212 @@ body {
   font-weight: 400;
   line-height: 16px;
   letter-spacing: var(--text-tracking);
+}
+
+.original-section {
+  width: 740px;
+  padding-bottom: 24px;
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.original-section__header {
+  display: flex;
+  align-items: center;
+  height: 31px;
+  margin-bottom: 20px;
+}
+
+.original-section__mark {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  margin-right: 6px;
+  transform: rotate(-28deg);
+  border-radius: 4px;
+  background: #0b2946;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 15px;
+  font-style: italic;
+  line-height: 1;
+}
+
+.original-section__mark::after {
+  position: absolute;
+  right: -3px;
+  bottom: 4px;
+  width: 17px;
+  height: 4px;
+  content: "";
+  transform: rotate(-6deg);
+  border-radius: 999px;
+  background: #f15b2a;
+}
+
+.original-section__header h2 {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 31px;
+  letter-spacing: var(--text-tracking);
+}
+
+.original-section__arrow {
+  width: 12px;
+  height: 12px;
+  margin-left: 14px;
+  transform: rotate(45deg);
+  border-top: 2px solid var(--text-secondary);
+  border-right: 2px solid var(--text-secondary);
+}
+
+.original-list {
+  display: grid;
+  grid-template-columns: repeat(4, 172px);
+  gap: 17px;
+}
+
+.original-card {
+  min-width: 0;
+}
+
+.original-card__media {
+  position: relative;
+  width: 172px;
+  height: 172px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #d9dde3;
+  background-position: center;
+  background-size: cover;
+}
+
+.original-card__media--tato {
+  background:
+    linear-gradient(155deg, #eb1d31 0 37%, #14535a 37% 76%, #111111 76%),
+    radial-gradient(circle at 51% 46%, #d58a45 0 36%, transparent 37%);
+}
+
+.original-card__media--tato::before {
+  position: absolute;
+  left: 57px;
+  top: 41px;
+  width: 58px;
+  height: 82px;
+  content: "";
+  border-radius: 46% 46% 40% 40%;
+  background: #d89550;
+  box-shadow:
+    -16px -12px 0 #29211e,
+    16px -11px 0 #29211e,
+    0 -23px 0 #29211e;
+}
+
+.original-card__media--tato h3 {
+  position: absolute;
+  right: 21px;
+  bottom: 18px;
+  width: 120px;
+  margin: 0;
+  color: #ffffff;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: center;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+}
+
+.original-card__media--green {
+  background:
+    radial-gradient(circle at 56% 32%, #75c765 0 8px, transparent 9px),
+    radial-gradient(circle at 68% 21%, #89d273 0 8px, transparent 9px),
+    linear-gradient(135deg, #edf2d6 0 31%, #95ce81 31% 100%);
+}
+
+.original-card__media--green::before {
+  position: absolute;
+  left: 49px;
+  top: 52px;
+  width: 72px;
+  height: 72px;
+  content: "";
+  transform: rotate(45deg);
+  border-radius: 8px;
+  background:
+    linear-gradient(90deg, transparent 44%, #d8a546 44% 56%, transparent 56%),
+    linear-gradient(#a6df75 0 40%, #8fd765 40% 100%);
+}
+
+.original-card__media--autism {
+  background-image: url("https://picsum.photos/id/20/344/344");
+}
+
+.original-card__media--tradisi {
+  filter: grayscale(1);
+  background-image: url("https://picsum.photos/id/1026/344/344");
+}
+
+.original-badge {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+  z-index: 2;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 45px;
+  height: 20px;
+  padding: 0 10px;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #2c2f35;
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+  line-height: 20px;
+  letter-spacing: var(--text-tracking);
+}
+
+.original-badge--laya {
+  font-family: Georgia, "Times New Roman", serif;
+  font-style: italic;
+}
+
+.original-card h4 {
+  display: -webkit-box;
+  max-height: 72px;
+  margin: 12px 0 4px;
+  overflow: hidden;
+  color: var(--text-primary);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: var(--text-tracking);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+}
+
+.original-card span,
+.original-card time {
+  display: block;
+  color: var(--text-secondary);
+  font-family: Inter, Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: var(--text-tracking);
+}
+
+.original-card time {
+  margin-top: 6px;
 }
 
 .content-layout__right {
