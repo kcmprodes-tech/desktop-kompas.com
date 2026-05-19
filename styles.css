@@ -4966,13 +4966,12 @@ body {
 
 .tato-app-gate {
   display: grid;
-  grid-template-columns: 318px 352px;
+  grid-template-columns: 353px 352px;
   align-items: center;
-  gap: 32px;
+  gap: 16px;
   width: 753px;
-  min-height: 228px;
   margin-top: 43px;
-  padding: 30px 32px 31px 46px;
+  padding: 16px;
   border: 1px solid rgba(255, 255, 255, 0.25);
   border-radius: 22px;
   background: rgba(0, 0, 0, 0.18);
@@ -4982,7 +4981,7 @@ body {
 .tato-app-gate__copy {
   display: flex;
   align-items: center;
-  gap: 19px;
+  gap: 8px;
 }
 
 .tato-app-icon {
@@ -4993,35 +4992,37 @@ body {
 }
 
 .tato-app-gate h2 {
-  margin: 0 0 15px;
+  margin: 0 0 12px;
   color: #ffffff;
   font-family: "Inter SemiBold TTF", Inter, Arial, Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   font-synthesis: none;
   font-weight: normal;
-  line-height: 30px;
+  line-height: 26px;
   letter-spacing: -0.4px;
+  text-align: center;
+  white-space: nowrap;
 }
 
 .tato-app-gate__copy p {
   margin: 0;
   color: rgba(255, 255, 255, 0.86);
   font-family: Inter, Arial, Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 21px;
   letter-spacing: -0.2px;
   text-align: center;
 }
 
 .tato-qr-box {
   display: grid;
-  grid-template-columns: 122px 1fr;
+  grid-template-columns: 112px 1fr;
   align-items: center;
-  gap: 34px;
+  gap: 12px;
   width: 352px;
   height: 163px;
-  padding: 26px 22px 25px 25px;
+  padding: 16px;
   border-radius: 7px;
   background: #252628;
 }
