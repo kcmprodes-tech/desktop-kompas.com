@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css?v=home-bottom-ad-1" />
+    <link rel="stylesheet" href="styles.css?v=tato-dayak-link-1" />
   </head>
   <body>
     <header class="site-header" aria-label="Kompas.com header">
@@ -243,7 +243,7 @@
                 <span class="original-section__arrow" aria-hidden="true"></span>
               </header>
               <div class="original-list">
-                <article class="original-card">
+                <article class="original-card" data-href="tato-dayak.html">
                   <div class="original-card__media original-card__media--tato">
                     <span class="original-badge original-badge--laya">Laya</span>
                     <h3>Tato Dayak Terakhir</h3>
@@ -936,7 +936,7 @@
       document.querySelectorAll(".headline-card, .story-card, .popular-item, .spotlight-card, .original-card, .news-update-card, .column-card, .recommendation-item, .continue-card, .post-short-item, .topic-card").forEach((card) => {
         card.classList.add("article-card-link");
         card.addEventListener("click", () => {
-          window.location.href = "article.html";
+          window.location.href = card.dataset.href || "article.html";
         });
       });
     </script>
